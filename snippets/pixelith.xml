@@ -9,6 +9,10 @@
   <remove-project name="LineageOS/android_vendor_lineage" />
   <project path="vendor/lineage" name="android_vendor_lineage" remote="pixelith" />
 
+  <!-- frameworks/base override: PixelProps patch (Evo port) lives here -->
+  <remove-project name="LineageOS/android_frameworks_base" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="pixelith" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
+
   <project path="vendor/pixel/gms" name="vendor_pixel_gms_17" remote="clover-gitlab" clone-depth="1" />
   <project path="vendor/pixel/launcher" name="vendor_pixel_launcher" remote="clover-gitlab" clone-depth="1" />
   <project path="vendor/pixel/sounds" name="vendor_pixel_sounds" remote="clover-gitlab" clone-depth="1" />
